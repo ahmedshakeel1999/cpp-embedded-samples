@@ -1,0 +1,9 @@
+// ultrasonic_sensor.h/.cpp
+class UltrasonicSensor {
+private:
+    int trigPin, echoPin;
+    float lastReading;
+public:
+    float getDistance();
+    bool isObstacleDetected(float threshold);
+};

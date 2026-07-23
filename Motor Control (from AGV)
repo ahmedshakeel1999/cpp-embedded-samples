@@ -1,0 +1,12 @@
+// motor_controller.h/.cpp
+class MotorController {
+private:
+    int pwmPin;
+    int dirPin;
+    float currentSpeed;
+public:
+    MotorController(int pwm, int dir);
+    void setSpeed(float speed);
+    void stop();
+    float getSpeed() const;
+};

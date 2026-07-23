@@ -1,0 +1,10 @@
+// can_handler.h/.cpp
+class CANHandler {
+private:
+    uint32_t baudRate;
+    std::queue<CANMessage> messageQueue;
+public:
+    bool sendMessage(uint32_t id, uint8_t* data, uint8_t len);
+    CANMessage receiveMessage();
+    void processQueue();
+};

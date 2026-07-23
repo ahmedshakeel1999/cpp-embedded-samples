@@ -1,0 +1,13 @@
+// robot_state_machine.h/.cpp
+enum class RobotState {
+    IDLE, NAVIGATING, OBSTACLE_DETECTED, STOPPED
+};
+
+class RobotStateMachine {
+private:
+    RobotState currentState;
+public:
+    void transition(RobotState newState);
+    void update();
+    RobotState getState() const;
+};

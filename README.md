@@ -7,7 +7,7 @@ Munich, Germany | ahmshakeel99@gmail.com
 ## About This Repository
 Clean C++ code samples demonstrating embedded systems 
 programming patterns from my professional and project experience.
-Code is written for readability and portability — hardware calls 
+Code is written for readability and portability, hardware calls 
 are commented out and replaced with simulation equivalents.
 
 ---
